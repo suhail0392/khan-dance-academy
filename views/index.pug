@@ -1,0 +1,54 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+      ul
+        div.logo
+          img(src="/static/img/logo.png", alt="")
+          p KDA
+        li #[a(href="/") home]
+        li #[a(href="/") about]
+        li #[a(href="/") services]
+        li #[a(href="/") class info]
+        li #[a(href="/") contact us]
+    section#danceimages
+      div This is Khan's Dance Academy
+      div Eat sleep Dance Repeat
+    section#mission
+      h2 Our Mission
+      div.card 
+        | dance perfection
+        div.card-container
+          div.card-image
+            img(src="/static/img/1.png", alt="")
+          div.card-content
+            p perfect way to learn dance
+      div.card 
+        | dance the way you like
+        div.card-container
+          div.card-image
+            img(src="/static/img/2.png", alt="")
+          div.card-content
+            p improve your own skills of dance
+      div.card
+        | dance expertise
+        div.card-container
+          div.card-image
+            img(src="/static/img/3.png", alt="")
+          div.card-content
+            p large variety of expert trainings
+    section#sponsers
+      h1 our sponsers
+      div#scontainer
+        img(src="/static/img/logo1.png", alt="sponsor" class="simg")
+        img(src="/static/img/logo2.png", alt="sponsor" class="simg")
+        img(src="/static/img/logo3.png", alt="sponsor" class="simg")
+        img(src="/static/img/logo4.png", alt="sponsor" class="simg")
+    section#footer
+      | copyright @ khandanceacademy.com | all rights reserved
+    script
+      include ../static/index.js
